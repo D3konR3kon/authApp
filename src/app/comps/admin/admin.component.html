@@ -1,0 +1,19 @@
+
+@if (hasAdminAccess) {
+    <p>admin works!</p>
+<a (click)="logout()">Sign out</a>
+
+{{content}}
+<p>Roles: {{roles}}</p>
+}@else {
+    <div>
+        {{message}}
+        <p>Some message</p>
+    </div>
+}
+
+<!-- @if (!hasAdminAccess) {
+    <div>
+        {{message}}
+    </div>
+} -->
